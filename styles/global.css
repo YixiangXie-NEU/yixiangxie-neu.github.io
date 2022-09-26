@@ -1,0 +1,40 @@
+body {
+  font-family: "Merriweather", serif;
+}
+
+footer {
+  background-color: rgb(245, 245, 245);
+  height: 64px;
+  line-height: 64px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+b {
+  font-weight: bolder;
+}
+
+.container {
+  padding: 0;
+}

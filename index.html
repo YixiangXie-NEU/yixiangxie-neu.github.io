@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The personal homepage for Yixiang (Dylan) Xie."
+    />
+    <meta name="author" content="Yixiang Xie" />
     <title>Yixiang Xie's Personal Homepage</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -10,158 +15,203 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
+
   <body>
-    <header>
-      <a href="./index.html">Yixiang Xie’s Personal Homepage</a>
+    <header class="navbar bg-light shadow">
+      <div class="mx-5 my-3">
+        <a class="navbar-brand" href="./index.html"
+          >Yixiang Xie’s Personal Homepage</a
+        >
+      </div>
     </header>
-    <section>
-      <h1>Yixiang Xie</h1>
-      <p>(pronounced EE shyANG shyEH)</p>
-      <p>Also go by Dylan</p>
-      <img
-        src="./images/profilePic.jpg"
-        alt="Portrait of Yixiang Xie smiling at camera against white background."
-      />
+
+    <section class="container">
+      <div class="row my-5">
+        <div class="col">
+          <h1>Yixiang Xie</h1>
+          <p>(pronounced EE shyANG shyEH)<br />Also go by Dylan</p>
+        </div>
+        <div class="col-3 ps-5">
+          <img
+            id="profile-picture"
+            src="./images/profilePic.jpg"
+            alt="Portrait of Yixiang Xie smiling at camera against white background."
+          />
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Contact Information</h2>
-      <address>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Contact Information</h2>
+      </div>
+      <div class="card-body">
+        <address>
+          <ul>
+            <li class="row">
+              <span class="col-2">Address:</span>
+              <span class="col"
+                >1402 Birchmeadow Lane<br />San Jose, CA, 95131</span
+              >
+            </li>
+            <li class="row">
+              <span class="col-2">Email:</span>
+              <a class="col" href="mailto:dylan052099[at]gmail.com"
+                >dylan052099[at]gmail.com</a
+              >
+            </li>
+            <li class="row">
+              <span class="col-2">Phone:</span
+              ><a class="col" href="tel:+16693280215">(669) 328-0215</a>
+            </li>
+            <li class="row">
+              <span class="col-2">GitHub:</span
+              ><a class="col" href="https://github.com/YixiangXie-NEU"
+                >YixiangXie-NEU</a
+              >
+            </li>
+            <li class="row">
+              <span class="col-2">Twitter:</span
+              ><a class="col" href="https://twitter.com/YixiangXie4"
+                >@YixiangXie4</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </section>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Skills</h2>
+      </div>
+      <div class="card-body">
         <ul>
-          <li>
-            <span>Address:</span>
-            <span>1402 Birchmeadow Lane<br />San Jose, CA, 95131</span>
+          <li class="row">
+            <b>Familiar with:</b>
+            <span class="ps-5">
+              React.js, TypeScript, CSS-in-JS with Emotion.js, GraphQL, Python,
+              Java
+            </span>
           </li>
-          <li>
-            <span>Email:</span>
-            <a href="mailto:dylan052099[at]gmail.com"
-              >dylan052099[at]gmail.com</a
-            >
+          <li class="row">
+            <b>Experience in:</b>
+            <span class="ps-5">
+              Vue.js, Spring Boot, Backend-For-Frontend, GitLab CI/CD, Figma,
+              Google Cloud, Unit testing with Jest, E2E testing with Cypress, C,
+              C++
+            </span>
           </li>
-          <li>
-            <span>Phone:</span><a href="tel:+16693280215">(669) 328-0215</a>
-          </li>
-          <li>
-            <span>GitHub:</span
-            ><a href="https://github.com/YixiangXie-NEU">YixiangXie-NEU</a>
-          </li>
-          <li>
-            <span>Twitter:</span
-            ><a href="https://twitter.com/YixiangXie4">@YixiangXie4</a>
+          <li class="row">
+            <b>Languages:</b>
+            <span class="ps-5">Native in Chinese, Proficient in English</span>
           </li>
         </ul>
-      </address>
+      </div>
     </section>
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          <b>Familiar with:</b>
-          <span>
-            React.js, TypeScript, CSS-in-JS with Emotion.js, GraphQL, Python,
-            Java
-          </span>
-        </li>
-        <li>
-          <b>Experience in:</b>
-          <span>
-            Vue.js, Spring Boot, Backend-For-Frontend, GitLab CI/CD, Figma,
-            Google Cloud, Unit testing with Jest, E2E testing with Cypress, C,
-            C++
-          </span>
-        </li>
-        <li>
-          <b>Languages:</b>
-          <span>Native in Chinese, Proficient in English</span>
-        </li>
-      </ul>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Education Experience</h2>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li class="mb-2">
+            <b>Northeastern University</b>, San Jose, CA,
+            <time datetime="2022">2022</time> -
+            <time datetime="2024">2024 (Expected)</time><br />
+            Master of Science in Computer Science
+          </li>
+          <li class="mb-2">
+            <b>Xiamen University</b>, Xiamen, China,
+            <time datetime="2017">2017</time> - <time datetime="2021">2021</time
+            ><br />
+            Bachelor of Engineering in Software Engineering
+          </li>
+          <li class="mb-2">
+            <b>Stanford University</b>, Palo Alto, CA,
+            <time datetime="2019-06">June 2019</time> -
+            <time datetime="2019-08">August 2019</time><br />
+            Summer Session in Computer Science
+          </li>
+        </ul>
+        <a href="./education.html">Detail &gt;</a>
+      </div>
     </section>
-    <section>
-      <h2>
-        <a href="./education.html">Education Experience</a>
-      </h2>
-      <ul>
-        <li>
-          <b>Northeastern University</b>, Master of Science in Computer Science,
-          <time datetime="2022">2022</time> -
-          <time datetime="2024">2024 (Expected)</time>
-        </li>
-        <li>
-          <b>Xiamen University</b>, Bachelor of Engineering in Software
-          Engineering, <time datetime="2017">2017</time> -
-          <time datetime="2021">2021</time>
-        </li>
-        <li>
-          <b>Stanford University</b>, Summer Session in Computer Science,
-          <time datetime="2019-06">June 2019</time> -
-          <time datetime="2019-08">August 2019</time>
-        </li>
-      </ul>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Work Experience</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          <b>Airwallex</b>, Shanghai, China,
+          <time datetime="2021-07">July 2021</time> -
+          <time datetime="2022-08">August 2022</time><br />
+          Frontend Engineer
+        </p>
+        <h3>Major milestones:</h3>
+        <p>
+          <b>Aggregate Funds</b>,
+          <time datetime="2021-12">December 2021</time> -
+          <time datetime="2022-02">February 2022</time>, a feature where
+          customers can move money from their subsidiary accounts into one
+          account in seconds.
+        </p>
+        <p>
+          <b>Refactor Link bank account & Add funds</b>,
+          <time datetime="2022-03">March 2022</time> -
+          <time datetime="2022-08">August 2022</time>, two features for
+          customers to link their bank accounts to Airwallex and add money from
+          them.
+        </p>
+        <p>
+          <b>Skills used</b>: React.js, TypeScript, Emotion.js, BFF with
+          GraphQL, GitLab CI/CD, Google Cloud, Jest, Cypress, Figma, Content
+          Management System with Contentful, HTML in Email and Email templates
+        </p>
+        <a href="./work.html">Detail &gt;</a>
+      </div>
     </section>
-    <section>
-      <h2>
-        <a href="./work.html">Work Experience</a>
-      </h2>
-      <p>
-        <b>Airwallex</b>, Shanghai, China,
-        <time datetime="2021-07">July 2021</time> -
-        <time datetime="2022-08">August 2022</time>
-      </p>
-      <p>Frontend Engineer</p>
-      <p><b>Major milestones:</b></p>
-      <p>
-        <b>Aggregate Funds</b>, <time datetime="2021-12">December 2021</time> -
-        <time datetime="2022-02">February 2022</time>, a feature where customers
-        can move money from their subsidiary accounts into one account in
-        seconds.
-      </p>
-      <p>
-        <b>Refactor Link bank account & Add funds</b>,
-        <time datetime="2022-03">March 2022</time> -
-        <time datetime="2022-08">August 2022</time>, two features for customers
-        to link their bank accounts to Airwallex and add money from them.
-      </p>
-      <p>
-        <b>Skills used</b>: React.js, TypeScript, Emotion.js, BFF with GraphQL,
-        GitLab CI/CD, Google Cloud, Jest, Cypress, Figma, Content Management
-        System with Contentful, HTML in Email and Email templates
-      </p>
+    <section class="container card mb-5">
+      <div class="card-header pt-3">
+        <h2>Research and Publication</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          <b>Professor Xiaoli Wang</b>, Xiamen, China,
+          <time datetime="2017-11">November 2017</time> -
+          <time datetime="2021-07">July 2021</time><br />
+          Research Assistant
+        </p>
+        <h3>Major milestones:</h3>
+        <p>
+          <b>Develop the system of IMAS</b>,
+          <time datetime="2020-03">March 2020</time> -
+          <time datetime="2020-11">November 2020</time>, an intelligent medical
+          analysis system to support medical practice based on concept graph.<br />
+          <b>Skills used</b>: Vue.js, JavaScript, D3.js, CSS, Java, Spring Boot,
+          Python
+        </p>
+        <p>
+          <b>39th Intl. Conf. on Conceptual Modeling (ER 2020)</b>, Vienna,
+          Austria, <time datetime="2020-11">November 2020</time><br />
+          2nd Author & Oral Presenter
+        </p>
+        <a href="./researchandpublication.html">Detail &gt;</a>
+      </div>
     </section>
-    <section>
-      <h2>
-        <a href="./researchandpublication.html">Research and Publication</a>
-      </h2>
-      <p>
-        <b>Research Assistant of Professor Xiaoli Wang</b>, Xiamen, China,
-        <time datetime="2017-11">November 2017</time> -
-        <time datetime="2021-07">July 2021</time>
-      </p>
-      <p>
-        <b>Develop the system of IMAS</b>,
-        <time datetime="2020-03">March 2020</time> -
-        <time datetime="2020-11">November 2020</time>, an intelligent medical
-        analysis system to support medical practice based on concept graph.
-      </p>
-      <p>
-        Main duties: design the graph database and import data from MIMIC III;
-        implement an interactive visualization page for the database, the
-        medical archive preprocessing tool and the disease auto diagnosis tool.
-      </p>
-      <p>
-        <b>Skills used</b>: Vue.js, JavaScript, D3.js, CSS, Java, Spring Boot,
-        Python
-      </p>
-      <p>
-        <b>39th Intl. Conf. on Conceptual Modeling (ER 2020)</b>, Vienna,
-        Austria,
-        <time datetime="2020-11">November 2020</time>
-      </p>
-      <p>2nd Author & Oral Presenter</p>
-    </section>
-    <footer>
+
+    <footer class="text-center">
       <small class="footnote">Yixiang Xie</small>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

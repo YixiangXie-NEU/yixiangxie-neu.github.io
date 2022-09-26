@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The personal homepage for Yixiang (Dylan) Xie."
+    />
+    <meta name="author" content="Yixiang Xie" />
     <title>Research and Publication</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -10,65 +15,97 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/subpage.css" />
   </head>
+
   <body>
-    <header>
-      <a href="./index.html">Yixiang Xie’s Personal Homepage</a>
-    </header>
-    <section>
-      <h1><a href="./index.html">Research and Publication</a></h1>
-    </section>
-    <section>
-      <h2>Research Assistant of Professor Xiaoli Wang</h2>
-      <p>
-        Xiamen, China,
-        <time datetime="2017-11">November 2017</time> -
-        <time datetime="2021-07">July 2021</time>
-      </p>
-      <p>
-        <b>Develop the system of IMAS</b>,
-        <time datetime="2020-03">March 2020</time> -
-        <time datetime="2020-11">November 2020</time>, an intelligent medical
-        analysis system to support medical practice based on concept graph. The
-        system provides an efficient medical archives processing tool and
-        supports effective medical data searching and analysis.
-      </p>
-      <p>
-        <b>Main duties</b>: design the graph database and import data from MIMIC
-        III; implement an interactive visualization page for the database, the
-        medical archive preprocessing tool and the disease auto diagnosis tool.
-      </p>
-      <p>This research produced the demo paper in <i>ER 2020</i>.</p>
-      <figure>
-        <img
-          src="./images/imasDemo.png"
-          alt="The demonstration of the IMAS system, shown in five steps."
-        />
-        <figcaption>The demonstration of the IMAS system</figcaption>
-      </figure>
-      <p>
-        <b>Skills used</b>: Vue.js, JavaScript, D3.js, CSS, Java, Spring Boot,
-        Python
-      </p>
-    </section>
-    <section>
-      <p>
-        <b>39th Intl. Conf. on Conceptual Modeling (ER 2020)</b>, Vienna,
-        Austria, <time datetime="2020-11">November 2020</time>
-      </p>
-      <p>2nd Author & Oral Presenter</p>
-      <p>
-        IMAS: An Intelligent Medical Analysis System Based on Concept Graph. In:
-        <i>ER Forum, Demo and Posters.</i> pp. 158-162. 2020.
-        <a href="http://ceur-ws.org/Vol-2716/paper14.pdf"
-          >http://ceur-ws.org/Vol-2716/paper14.pdf</a
+    <header class="navbar bg-light shadow">
+      <div class="mx-5 my-3">
+        <a class="navbar-brand" href="./index.html"
+          >Yixiang Xie’s Personal Homepage</a
         >
-      </p>
+      </div>
+    </header>
+
+    <section class="container my-5">
+      <h1>Research and Publication</h1>
     </section>
-    <footer>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Research Assistant of Professor Xiaoli Wang</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          Xiamen, China,
+          <time datetime="2017-11">November 2017</time> -
+          <time datetime="2021-07">July 2021</time>
+        </p>
+        <p>
+          <b>Develop the system of IMAS</b>,
+          <time datetime="2020-03">March 2020</time> -
+          <time datetime="2020-11">November 2020</time>, an intelligent medical
+          analysis system to support medical practice based on concept graph.
+          The system provides an efficient medical archives processing tool and
+          supports effective medical data searching and analysis.
+        </p>
+        <p>
+          <b>Main duties</b>: design the graph database and import data from
+          MIMIC III; implement an interactive visualization page for the
+          database, the medical archive preprocessing tool and the disease auto
+          diagnosis tool.
+        </p>
+        <p>This research produced the demo paper in <i>ER 2020</i>.</p>
+        <figure class="container text-center">
+          <img
+            class="col"
+            src="./images/imasDemo.png"
+            alt="The demonstration of the IMAS system, shown in five steps."
+            width="300px"
+            height="600px"
+          />
+          <figcaption class="my-2">
+            The demonstration of the IMAS system
+          </figcaption>
+        </figure>
+        <p class="mb-0">
+          <b>Skills used</b>: Vue.js, JavaScript, D3.js, CSS, Java, Spring Boot,
+          Python
+        </p>
+      </div>
+    </section>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Publication</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          <b>39th Intl. Conf. on Conceptual Modeling (ER 2020)</b>, Vienna,
+          Austria, <time datetime="2020-11">November 2020</time><br />2nd Author
+          & Oral Presenter
+        </p>
+        <p class="mb-0">
+          IMAS: An Intelligent Medical Analysis System Based on Concept Graph.
+          In:
+          <i>ER Forum, Demo and Posters.</i> pp. 158-162. 2020.
+          <a href="http://ceur-ws.org/Vol-2716/paper14.pdf"
+            >http://ceur-ws.org/Vol-2716/paper14.pdf</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer class="text-center">
       <small class="footnote">Yixiang Xie</small>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

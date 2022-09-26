@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The personal homepage for Yixiang (Dylan) Xie."
+    />
+    <meta name="author" content="Yixiang Xie" />
     <title>Education Experience</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -10,73 +15,101 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/subpage.css" />
   </head>
+
   <body>
-    <header>
-      <a href="./index.html">Yixiang Xie’s Personal Homepage</a>
+    <header class="navbar bg-light shadow">
+      <div class="mx-5 my-3">
+        <a class="navbar-brand" href="./index.html"
+          >Yixiang Xie’s Personal Homepage</a
+        >
+      </div>
     </header>
-    <section>
-      <h1><a href="./index.html">Education Experience</a></h1>
+
+    <section class="container my-5">
+      <h1>Education Experience</h1>
     </section>
-    <section>
-      <h2>Northeastern University</h2>
-      <p>
-        Master of Science in Computer Science,
-        <time datetime="2022">2022</time> -
-        <time datetime="2024">2024 (Expected)</time>
-      </p>
-      <p>
-        <b>Current courses:</b>
-      </p>
-      <ul>
-        <li>CS 5010: Program Design Paradigms</li>
-        <li>CS 5610: Web Development</li>
-      </ul>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Northeastern University</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          Master of Science in Computer Science,
+          <time datetime="2022">2022</time> -
+          <time datetime="2024">2024 (Expected)</time>
+        </p>
+        <div class="row">
+          <b>Current courses:</b>
+          <ul class="ps-5 mb-0">
+            <li>CS 5010: Program Design Paradigms</li>
+            <li>CS 5610: Web Development</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Xiamen University</h2>
-      <p>
-        Bachelor of Engineering in Software Engineering,
-        <time datetime="2017">2017</time> -
-        <time datetime="2021">2021</time>
-      </p>
-      <p>
-        <b>Main courses:</b>
-      </p>
-      <ul>
-        <li>Data Structure</li>
-        <li>Algorithm Analysis and Design</li>
-        <li>Database</li>
-        <li>C Programming Language</li>
-        <li>C++ Programming Language</li>
-        <li>Java Programming Language</li>
-        <li>Computer Networks</li>
-        <li>Computer Architecture</li>
-        <li>Operating Systems</li>
-        <li>Software Engineering</li>
-        <li>Software Project Management</li>
-        <li>Software Testing</li>
-      </ul>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Xiamen University</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          Bachelor of Engineering in Software Engineering,
+          <time datetime="2017">2017</time> -
+          <time datetime="2021">2021</time>
+        </p>
+        <div class="row">
+          <b>Main courses:</b>
+          <ul class="ps-5 mb-0">
+            <li>Data Structure</li>
+            <li>Algorithm Analysis and Design</li>
+            <li>Database</li>
+            <li>C Programming Language</li>
+            <li>C++ Programming Language</li>
+            <li>Java Programming Language</li>
+            <li>Computer Networks</li>
+            <li>Computer Architecture</li>
+            <li>Operating Systems</li>
+            <li>Software Engineering</li>
+            <li>Software Project Management</li>
+            <li>Software Testing</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Stanford University</h2>
-      <p>
-        Summer Session in Computer Science,
-        <time datetime="2019-06">June 2019</time> -
-        <time datetime="2019-08">August 2019</time>
-      </p>
-      <p>
-        <b>Courses:</b>
-      </p>
-      <ul>
-        <li>CS161: Design and Analysis of Algorithms</li>
-        <li>CS193C: Client-Side Internet Technologies</li>
-      </ul>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Stanford University</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          Summer Session in Computer Science,
+          <time datetime="2019-06">June 2019</time> -
+          <time datetime="2019-08">August 2019</time>
+        </p>
+        <div class="row">
+          <b>Courses:</b>
+          <ul class="ps-5 mb-0">
+            <li>CS161: Design and Analysis of Algorithms</li>
+            <li>CS193C: Client-Side Internet Technologies</li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <footer>
+
+    <footer class="text-center">
       <small class="footnote">Yixiang Xie</small>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The personal homepage for Yixiang (Dylan) Xie."
+    />
+    <meta name="author" content="Yixiang Xie" />
     <title>Work Experience</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -10,95 +15,102 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/subpage.css" />
   </head>
+
   <body>
-    <header>
-      <a href="./index.html">Yixiang Xie’s Personal Homepage</a>
+    <header class="navbar bg-light shadow">
+      <div class="mx-5 my-3">
+        <a class="navbar-brand" href="./index.html"
+          >Yixiang Xie’s Personal Homepage</a
+        >
+      </div>
     </header>
-    <section>
-      <h1><a href="./index.html">Work Experience</a></h1>
+
+    <section class="container my-5">
+      <h1>Work Experience</h1>
     </section>
-    <section>
-      <h2>Airwallex</h2>
-      <p>Frontend Engineer</p>
-      <p>
-        Shanghai, China,
-        <time datetime="2021-07">July 2021</time> -
-        <time datetime="2022-08">August 2022</time>
-      </p>
-      <p>
-        About the company: a Fin-tech start-up focusing on cross border
-        transaction infrastructure and application for enterprises.
-        <a href="https://www.airwallex.com/us">Website</a>
-      </p>
+    <section class="container card mb-4">
+      <div class="card-header pt-3">
+        <h2>Airwallex</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          Frontend Engineer, Shanghai, China,
+          <time datetime="2021-07">July 2021</time> -
+          <time datetime="2022-08">August 2022</time>
+        </p>
+        <p>
+          About the company: a Fin-tech start-up focusing on cross border
+          transaction infrastructure and application for enterprises.
+          <a href="https://www.airwallex.com/us">Website</a>
+        </p>
+        <h3>Major milestones:</h3>
+        <div>
+          <p>
+            <b>Aggregate Funds</b>,
+            <time datetime="2021-12">December 2021</time> -
+            <time datetime="2022-02">February 2022</time>, a feature where
+            customers can move money from their subsidiary accounts into one
+            account in seconds.<br />
+            To specify which account and currency to toggle, and what amount to
+            transfer, a table with various operations was created.<br />
+            In order to support up to 200 accounts and 15 currencies, I need to
+            optimize the performance with React Virtual to allow smooth
+            scrolling without glitches.
+          </p>
+          <p>
+            Demo video:
+            <a
+              href="https://help.airwallex.com/hc/en-gb/articles/4453711263119-How-to-manage-your-multiple-accounts-with-Account-Group-"
+              >from 2:37 to 4:23</a
+            >
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>Refactor Link bank account & Add funds</b>,
+            <time datetime="2022-03">March 2022</time> -
+            <time datetime="2022-08">August 2022</time>, two features for
+            customers to link their bank accounts to Airwallex and add money
+            from them.<br />
+            We needed to extend Link bank account from 1 to 6 regions with
+            different bank info needed. We also needed to support Plaid for US
+            customers.<br />
+            We need to make the user experience consistent, while the codebase
+            remains manageable and extendable.
+          </p>
+          <p>
+            Demo examples:
+            <a
+              href="https://help.airwallex.com/hc/en-gb/articles/4817756172175-How-to-link-your-external-bank-account-to-Airwallex"
+              >Link account</a
+            >
+            &
+            <a
+              href="https://help.airwallex.com/hc/en-gb/articles/4817756172175-How-to-link-your-external-bank-account-to-Airwallex"
+              >Add funds</a
+            >
+          </p>
+        </div>
+        <b>Skills used</b>: React.js, TypeScript, Emotion.js, BFF with GraphQL,
+        GitLab CI/CD, Google Cloud, Jest, Cypress, Figma, Content Management
+        System with Contentful, HTML in Email and Email templates
+      </div>
     </section>
-    <section>
-      <h3>Major milestones:</h3>
-      <section>
-        <p>
-          <b>Aggregate Funds</b>,
-          <time datetime="2021-12">December 2021</time> -
-          <time datetime="2022-02">February 2022</time>, a feature where
-          customers can move money from their subsidiary accounts into one
-          account in seconds.
-        </p>
-        <p>
-          To specify which account and currency to toggle, and what amount to
-          transfer, a table with various operations was created.
-        </p>
-        <p>
-          In order to support up to 200 accounts and 15 currencies, I need to
-          optimize the performance with React Virtual to allow smooth scrolling
-          without glitches.
-        </p>
-        <p>
-          Demo video:
-          <a
-            href="https://help.airwallex.com/hc/en-gb/articles/4453711263119-How-to-manage-your-multiple-accounts-with-Account-Group-"
-            >from 2:37 to 4:23</a
-          >
-        </p>
-      </section>
-      <section>
-        <p>
-          <b>Refactor Link bank account & Add funds</b>,
-          <time datetime="2022-03">March 2022</time> -
-          <time datetime="2022-08">August 2022</time>, two features for
-          customers to link their bank accounts to Airwallex and add money from
-          them.
-        </p>
-        <p>
-          We needed to extend Link bank account from 1 to 6 regions with
-          different bank info needed. We also needed to support Plaid for US
-          customers.
-        </p>
-        <p>
-          We need to make the user experience consistent, while the codebase
-          remains manageable and extendable.
-        </p>
-        <p>
-          Demo examples:
-          <a
-            href="https://help.airwallex.com/hc/en-gb/articles/4817756172175-How-to-link-your-external-bank-account-to-Airwallex"
-            >Link account</a
-          >
-          &
-          <a
-            href="https://help.airwallex.com/hc/en-gb/articles/4817756172175-How-to-link-your-external-bank-account-to-Airwallex"
-            >Add funds</a
-          >
-        </p>
-      </section>
-    </section>
-    <section>
-      <b>Skills used</b>: React.js, TypeScript, Emotion.js, BFF with GraphQL,
-      GitLab CI/CD, Google Cloud, Jest, Cypress, Figma, Content Management
-      System with Contentful, HTML in Email and Email templates
-    </section>
-    <footer>
+
+    <footer class="text-center">
       <small class="footnote">Yixiang Xie</small>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -1,0 +1,10 @@
+h2 {
+  height: 40px;
+  line-height: 40px;
+}
+
+#profile-picture {
+  width: 112px;
+  border-radius: 56px;
+  border: 2px solid rgb(50, 50, 50);
+}
