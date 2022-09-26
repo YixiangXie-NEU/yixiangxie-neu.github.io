@@ -2,11 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    amd: true,
     node: true,
   },
-  plugins: ["prettier"],
-  extends: ["eslint:recommended", "prettier"],
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
@@ -15,8 +13,5 @@ module.exports = {
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
-    "prettier/prettier": "error",
   },
 };
