@@ -1,0 +1,26 @@
+{
+  "name": "personal-homepage",
+  "version": "1.0.0",
+  "description": "This is the personal homepage for Yixiang Xie.",
+  "main": "./scripts/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YixiangXie-NEU/yixiangxie.github.io.git"
+  },
+  "keywords": [],
+  "author": "Yixiang Xie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YixiangXie-NEU/yixiangxie.github.io/issues"
+  },
+  "homepage": "https://github.com/YixiangXie-NEU/yixiangxie.github.io#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}

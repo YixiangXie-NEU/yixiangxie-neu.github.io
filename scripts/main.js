@@ -11,3 +11,5 @@ const spinningCallback = () => {
     console.log("HAPPY CODING!");
   }
 };
+
+module.export = spinningCallback;
