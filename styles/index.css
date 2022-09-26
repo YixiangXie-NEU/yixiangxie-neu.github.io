@@ -8,3 +8,16 @@ h2 {
   border-radius: 56px;
   border: 2px solid rgb(50, 50, 50);
 }
+
+.rotate {
+  animation: rotation 2s ease-in-out;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
