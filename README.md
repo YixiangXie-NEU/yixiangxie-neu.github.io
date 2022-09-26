@@ -26,6 +26,8 @@ Introduction slides: to be filled
 
 Demo video: to be filled
 
+Technical requirements: HTML, JavaScript, CSS, Bootstrap.js
+
 Favicon source: [favicon.io](https://favicon.io/favicon-generator/)
 
 Font source: [Google Fonts](https://fonts.google.com)
