@@ -1,5 +1,5 @@
 # yixiangxie-neu.github.io
-This is the repo of the [personal homepage](https://yixiangxie-neu.github.io/index.html) for Yixiang Xie.
+This is the repo of [Yixiang Xie’s Personal Homepage](https://yixiangxie-neu.github.io/index.html).
 
 **Author**: Yixiang Xie
 
