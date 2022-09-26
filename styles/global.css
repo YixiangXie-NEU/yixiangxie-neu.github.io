@@ -35,6 +35,10 @@ b {
   font-weight: bolder;
 }
 
+i {
+  font-style: italic;
+}
+
 .container {
   padding: 0;
 }
