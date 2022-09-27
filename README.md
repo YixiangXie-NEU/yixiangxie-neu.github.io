@@ -22,9 +22,9 @@ This is the repo of [Yixiang Xie’s Personal Homepage](https://yixiangxie-neu.g
 
 <img width="498" alt="Screen Shot 2022-09-26 at 11 51 33 AM" src="https://user-images.githubusercontent.com/113476679/192356916-154daf35-4786-4775-979a-5b5ff06f283e.png">
 
-**Introduction slides**: to be filled
+**Introduction slides**: [link](https://docs.google.com/presentation/d/1oatkiVrnLrxbf9UrsnAXy721aQPpHm6MYEmTifdzozY/edit?usp=sharing)
 
-**Demo video**: to be filled
+**Demo video**: [link](https://www.youtube.com/watch?v=-91o2NqxETc)
 
 **Technical requirements**: HTML, JavaScript, CSS, Bootstrap.js
 
